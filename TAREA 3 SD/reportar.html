@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para registrar un rescate de un animal">
+    <title>Reportar Rescate - Sistema de Rescate y Adopción</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Control de Rescate y Adopción</h1>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html" aria-current="page">Reportar Rescate</a></li>
+                <li><a href="rescates.html">Ver Rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario-reporte">
+            <h2>Reportar Nuevo Rescate</h2>
+            <p>Para registrar el rescate, llene todos los campos que son obligatorios (*)</p>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos del informante</legend>
+                    <p>
+                        <label for="nombre-reportante">Nombre completo *</label><br>
+                        <input type="text" id="nombre-reportante" name="nombre_reportante" required minlength="3" maxlength="100" autocomplete="name" placeholder="Ej: Gregory Villacrés">
+                    </p>
+                    <p>
+                            <label for="telefono">Teléfono de contacto *</label><br>
+                            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{7,15}" autocomplete="tel" placeholder="Ej: 3001234567">
+                    </p>
+                    <p>
+                            <label for="email">Correo electrónico *</label><br>
+                            <input type="email" id="email" name="email" required autocomplete="email" placeholder="ejemplo@correo.com">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos del animal</legend>
+                    <p>
+                        <label for="nombre-animal">Nombre del animal (si se conoce)</label><br>
+                        <input type="text" id="nombre-animal" name="nombre_animal" maxlength="50" placeholder="Ej: Chiquitin">
+                    </p>
+                    <p>
+                        <label for="especie">Especie *</label><br>
+                        <select id="especie" name="especie" required>
+                            <option value="">--Seleccione una especie--</option>
+                            <option value="perro">Perro</option>
+                            <option value="ave">Ave</option>
+                            <option value="tortuga">Tortuga</option>
+                            <option value="iguana">Iguana</option>
+                            <option value="gato">Gato</option>
+                            <option value="mariposa">Mariposa</option>
+                            <option value="lobo_marino">Lobo marino</option>
+                            <option value="hamster">hámster</option>
+                            <option value="cerdo">Cerdo</option>
+                            <option value="burro">Burro</option>
+                            <option value="pato">Pato</option>
+                            <option value="mono">Mono</option>
+                            <option value="pinguino">Pinguino</option>
+                            <option value="otro">otro</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="condicion">Condición de salud *</label><br>
+                        <select id="condicion" name="condicion" required>
+                             <option value="">--Seleccione--</option>
+                             <option value="buena">Buena</option>
+                             <option value="regular">Regular</option>
+                             <option value="critica">Crítica</option>     
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ubicación y Detalles</legend>
+                    <p>
+                        <label for="direccion">Dirección del rescate *</label><br>
+                        <input type="text" id="direccion" name="direccion" required maxlength="150" placeholder="Ej: Calle 5# 18-29">
+                    </p>
+                    <p>
+                        <label for="fecha">Fecha del rescate *</label><br>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+                    <p>
+                        <label for="descripcion">Descripción del caso *</label><br>
+                        <textarea id="descripcion" name="descripcion" rows="4" cols="40" required minlength="10" placeholder="Describa la situación del animal..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar Reporte</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Rescate y Adopción. Todos los derechos reservados</p>
+    </footer>
+    
+</body>
+</html>
