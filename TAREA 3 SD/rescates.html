@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listado completo de rescates registrados en el sistema">
+    <title>Rescates Registrados  Sistemas de Rescate y Adopción</title>
+</head>
+<body>
+
+    <header>
+        <h1> Sistema de Control de Rescate y Adopción</h1>
+        <nav aria-label="Menú principal">
+            <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="reportar.html">Reportar Rescate</a></li>
+               <li><a href="rescates.html" aria-current="page">Ver rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="lista-rescates">
+            <h2>Rescates Registrados</h2>
+            <p>A continuación se muestran todos los rescates registrados en el sistema</p>
+
+            <table border="1">
+                <caption>Registro de rescates - Actualizado al 2026</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Especie</th>
+                        <th scope="col">Condición</th>
+                        <th scope="col">Ciudad</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>Canela</td>
+                        <td>Perro</td>
+                        <td>Buena</td>
+                        <td>Latacunga</td>
+                        <td><time datetime="2026-10-01">01/10/2026</time></td>
+                        <td>En adopción</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">002</th>
+                        <td>Sophi</td>
+                        <td>Gato</td>
+                        <td>Regular</td>
+                        <td>Saquisili</td>
+                        <td><time datetime="2026-11-05">05/11/2026</time></td>
+                        <td>En tratamiento</td>  
+                    </tr>
+                    <tr>
+                        <th scope="row">003</th>
+                        <td>Drupy</td>
+                        <td>Perro</td>
+                        <td>Critica</td>
+                        <td>Salcedo</td>
+                        <td><time datetime="2026-10-18">18/10/2026</time></td>
+                        <td>Hospitalización</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="6">Total de rescates registrados:</th>
+                        <td><strong>3</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Rescate y Adopción.</p>
+    </footer>
+</body>
+</html>
